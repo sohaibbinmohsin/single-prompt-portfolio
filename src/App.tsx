@@ -145,16 +145,16 @@ function App() {
         <div className="container mx-auto px-4 py-8 max-w-4xl">
           {/* Header */}
           <div className="text-center mb-12">
-            <button
+            {/* <button
               onClick={backToLanding}
-              className="inline-flex items-center gap-2 text-cinereous hover:text-black transition-colors mb-4"
+              className="inline-flex items-center gap-2 text-cinereous hover:text-black transition-colors mb-4 justify-start"
             >
               <ChevronLeft className="w-4 h-4" />
               Back to home
-            </button>
-            <div className="inline-flex items-center gap-2 bg-black text-snow px-4 py-2 rounded-full mb-4">
+            </button> */}
+            <div className="inline-flex items-center gap-2 bg-black text-snow px-4 py-2 rounded-full mb-4 cursor-pointer" onClick={backToLanding}>
               <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-semibold">Portfolio Generator</span>
+              <span className="text-sm font-semibold">Single Prompt Portfolio</span>
             </div>
             <h1 className="text-4xl font-bold text-black mb-2">
               Create Your Perfect Portfolio
@@ -218,16 +218,12 @@ function App() {
                 href="https://bolt.new"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full text-sm font-medium hover:from-purple-700 hover:to-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-black to-almond-600 text-white rounded-full text-sm font-medium hover:from-purple-700 hover:to-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
-                <svg
-                  className="w-4 h-4"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M13 3L4 14h7l-2 7 9-11h-7l2-7z" />
                 </svg>
-                Built with Bolt.new
+                Built on Bolt
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
@@ -308,7 +304,7 @@ function App() {
       </section>
 
       {/* How It Works */}
-      <section className="px-4 py-16 bg-snow/50">
+      <section className="px-4 py-16 bg-almond/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-16">
             How it works
@@ -459,15 +455,15 @@ function App() {
           </div>
 
           {/* Quote/Stat */}
-          <div className="text-center mb-12">
-            <div className="bg-black text-snow px-8 py-6 rounded-2xl inline-block shadow-xl">
+          {/* <div className="text-center mt-8">
+            <div className="bg-almond-700 text-black px-8 py-6 rounded-2xl inline-block shadow-xl">
               <p className="text-xl md:text-2xl font-bold mb-2">
                 "Recruiters spend 3x more time on interactive portfolios than
                 resumes."
               </p>
-              <p className="text-sm text-snow/80">— Industry Research Study</p>
+              <p className="text-sm text-black/80">— Industry Research Study</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
